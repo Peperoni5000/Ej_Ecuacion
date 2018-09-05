@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\begin{document}
+\title{Ecuacion en diferencias de primer orden}
+1.Escribe la fórmula de la solucion a la ecuacion en diferencias lineal homogenea de primer orden con condicion inicial:
+$$x_{n-1}=ax_n,$$
+$$x_0=C.$$
+
+Observemos un patron calculando los primeros $x_1,x_2 y x_3$
+\begin{align*}
+X_1&=aX_0=aC\\
+x_2&=ax_1=a(aC)1=a^2C\\
+x_3&=ax_2=a(a^2C)=a^3C
+\end{align*}
+Observando lo anterior, sospechamos que la solucion es: $$x_n=a^nC$$
+
+Para probarlo utilizamos induccion, veamos que se cumple para n=1 $$a^1C=ax_0=x_1$$
+Ahora supongamos que se sumple para $k$ y probemos que esto implica que se cumple para $k+1$
+
+\end{document}
